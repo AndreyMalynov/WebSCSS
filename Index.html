@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="StyleSite.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Explanation
+      <div class="tb-container"> -- container of the element, for the label styling
+        <input class="aumd-tb" id="inputid" name="inputName" type="text" placeholder=" "> -- the actual input, placeholder must be set to a space for it to work properly
+        <label class="aumd-tb-label" for="inputName">Input Label</label>  -- this is the actual placeholder/label of the element. Put whatever your label is there
+        <span class="validation"></span> -- This is mainly used for animating the line at the bottom of the input, keep this element if you want that sweet line animation. The span is also used for showing form validation messages to the user (currently the styles only support bootstrap validation classes).
+      </div>
+    -->
+    <div class="demo-container">
+        <div class="tb-container">
+            <input class="aumd-tb" id="inputid" name="inputName" type="text" placeholder=" ">
+            <label class="aumd-tb-label" for="inputName">Normal text input</label>
+            <span class="validation"></span>
+        </div>
+        <div class="tb-container">
+            <input class="aumd-tb" id="inputid" name="inputName" type="password" placeholder=" ">
+            <label class="aumd-tb-label" for="inputName">Normal password input</label>
+            <span class="validation"></span>
+        </div>
+        <div class="tb-container has-success">
+            <input class="aumd-tb" id="inputid" name="inputName" type="text" placeholder=" " value="Valid text input">
+            <label class="aumd-tb-label" for="inputName">Valid text input</label>
+            <span class="validation form-control-success"></span>
+        </div>
+        <div class="tb-container has-warning">
+            <input class="aumd-tb" id="inputid" name="inputName" type="text" placeholder=" " value="">
+            <label class="aumd-tb-label" for="inputName">Warning text input (no value)</label>
+            <span class="validation form-control-warning"></span>
+        </div>
+        <div class="tb-container has-danger">
+            <input class="aumd-tb" id="inputid" name="inputName" type="text" placeholder=" ">
+            <label class="aumd-tb-label" for="inputName">Input</label>
+            <span class="validation form-control-danger"></span>
+        </div>
+        <div class="tb-container">
+            <input class="aumd-tb" id="inputid" name="inputName" type="text" placeholder=" " value="No label">
+            <span class="validation"></span>
+        </div>
+    </div>
+</body>
+</html>
